@@ -1,7 +1,7 @@
 version: '3'
 services:
   rock-mediation:
-    image: datashield/rock-dolomite-uniform:latest
+    image: datashield/rock-dolomite-stadium:latest
     #build: .
     ports:
       - ${PORT}:8085
