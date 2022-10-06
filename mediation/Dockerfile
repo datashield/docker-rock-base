@@ -1,7 +1,7 @@
 #
-# Rock R Server Dockerfile with DataSHIELD Exposome
+# Rock R Server Dockerfile with DataSHIELD Mediation
 #
-# https://github.com/datashield/docker-rock-mediation
+# https://github.com/datashield/docker-rock
 #
 
 FROM datashield/rock-base:6.2-R4.2
