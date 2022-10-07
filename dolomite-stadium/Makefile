@@ -6,10 +6,11 @@ docker_compose_file=docker-compose.yml
 no_cache=true
 name=datashield/rock-dolomite-stadium
 tag=latest
+docker_file=Dockerfile
 
 # Build Docker image
 build-image:
-	sudo docker build --no-cache=$(no_cache) -t="${name}:$(tag)" .
+	sudo docker build --file $(docker_file) --no-cache=$(no_cache) -t="${name}:$(tag)" .
 
 push-image:
 	sudo docker image push ${name}:$(tag)
