@@ -5,7 +5,7 @@
 docker_compose_file=docker-compose.yml
 no_cache=true
 name=datashield/rock-dolomite-uniform
-tag=latest
+tag=1.0.1
 
 # Build Docker image
 build-image:
