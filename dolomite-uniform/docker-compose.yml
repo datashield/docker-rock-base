@@ -1,6 +1,6 @@
 version: '3'
 services:
-  rock-mediation:
+  rock-dolomite-uniform:
     image: datashield/rock-dolomite-uniform:latest
     #build: .
     ports:
