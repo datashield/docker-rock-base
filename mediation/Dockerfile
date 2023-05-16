@@ -4,7 +4,7 @@
 # https://github.com/datashield/docker-rock
 #
 
-FROM datashield/rock-base:6.2-R4.2
+FROM datashield/rock-base:6.2-R4.3
 
 ENV DSMEDIATION_VERSION 0.0.3
 
