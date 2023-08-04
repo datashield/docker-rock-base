@@ -4,6 +4,15 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=false
+r=4.3
+
+all:
+	sudo docker build --no-cache=true -t="datashield/rock-base:$(tag)-R$(r)" . && \
+		sudo docker build -t="datashield/rock-base:$(tag)" . && \
+		sudo docker build -t="datashield/rock-base:latest" . && \
+		sudo docker image push datashield/rock-base:$(tag)-R$(r) && \
+		sudo docker image push datashield/rock-base:$(tag) && \
+		sudo docker image push datashield/rock-base:latest
 
 # Build Docker image
 build-image:
