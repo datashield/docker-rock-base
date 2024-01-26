@@ -4,7 +4,7 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=true
-name=datashield/rock-dolomite-uniform
+name=datashield/rock-dolomite-xenon-permissive
 tag=latest
 
 # Build Docker image

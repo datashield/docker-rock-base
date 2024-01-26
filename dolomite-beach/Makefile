@@ -4,15 +4,15 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=true
-name=datashield/rock-dolomite-uniform
+name=datashield/rock-dolomite-beach
 tag=latest
 
 # Build Docker image
 build-image:
-	sudo docker build --no-cache=$(no_cache) -t="${name}:$(tag)" .
+	docker build --no-cache=$(no_cache) -t="${name}:$(tag)" .
 
 push-image:
-	sudo docker image push ${name}:$(tag)
+	docker image push ${name}:$(tag)
 
 
 up:
