@@ -1,7 +1,7 @@
 version: '3'
 services:
   rock-dolomite-xenon:
-    image: datashield/rock-dolomite-xenon:latest
+    image: datashield/rock-dolomite-xenon-permissive:latest
     #build: .
     ports:
       - ${PORT}:8085
