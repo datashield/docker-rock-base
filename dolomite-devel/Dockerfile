@@ -4,7 +4,7 @@
 # https://github.com/datashield/docker-rock
 #
 
-FROM datashield/rock-base:6.3-R4.3
+FROM datashield/rock-base:6.3-R4.3-2.0
 
 ENV ROCK_LIB /var/lib/rock/R/library
 RUN chown rock $ROCK_LIB

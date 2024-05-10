@@ -5,7 +5,7 @@
 docker_compose_file=docker-compose.yml
 no_cache=true
 name=datashield/rock-dolomite-beach
-tag=latest
+tag=2.0
 
 # Build Docker image
 build-image:
