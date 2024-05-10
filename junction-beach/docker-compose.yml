@@ -1,7 +1,7 @@
 version: '3'
 services:
-  rock-dolomite-beach:
-    image: datashield/rock-dolomite-beach:latest
+  rock-junction-beach:
+    image: datashield/rock-junction-beach:latest
     #build: .
     ports:
       - ${PORT}:8085
