@@ -4,7 +4,7 @@
 # https://github.com/datashield/docker-rock
 #
 
-FROM datashield/rock-base:6.3-R4.3-2.0
+FROM datashield/rock-base:6.3.0-R4.4.0
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
