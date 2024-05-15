@@ -20,8 +20,5 @@ RUN R -q -e "update.packages()"
 ENV DSURVIVAL_VERSION v2.1.3
 LABEL "dsSurvival"=${DSSURVIVAL_BRANCH}
 
-RUN Rscript -e "remotes::install_github('neelsoumya/dsSurvival', ref = '$DSURVIVAL_VERSION', dependencies = TRUE, upgrade = FALSE, lib = '$ROCK_LIB')"
-
-# Set owner
-
-RUN chown -R rock $ROCK_LIB
+RUN Rscript -e "remotes::install_github('neelsoumya/dsSurvival', ref = '$DSURVIVAL_VERSION', dependencies = TRUE, upgrade = FALSE, lib = '$ROCK_LIB')" && \
+  chown -R rock $ROCK_LIB

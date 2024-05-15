@@ -13,6 +13,5 @@ ENV ROCK_LIB /var/lib/rock/R/library
 ENV DSBASE_VERSION v6.3.1-dev
 
 # dsBase
-RUN Rscript -e "remotes::install_github('datashield/dsBase', ref = '$DSBASE_VERSION', repos = c('https://cloud.r-project.org', 'https://cran.datashield.org'), upgrade = FALSE, lib = '$ROCK_LIB')"
-
-RUN chown -R rock $ROCK_LIB
+RUN Rscript -e "remotes::install_github('datashield/dsBase', ref = '$DSBASE_VERSION', repos = c('https://cloud.r-project.org', 'https://cran.datashield.org'), upgrade = FALSE, lib = '$ROCK_LIB')" && \
+  chown -R rock $ROCK_LIB
