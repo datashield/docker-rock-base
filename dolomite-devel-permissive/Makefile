@@ -5,7 +5,7 @@
 docker_compose_file=docker-compose.yml
 no_cache=true
 name=datashield/rock-dolomite-devel-permissive
-tag=2.0.0
+tag=latest
 
 # Build Docker image
 build-image:

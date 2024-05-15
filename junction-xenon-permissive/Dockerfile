@@ -10,3 +10,5 @@ ENV DSBASE_VERSION 6.3.0-permissive
 
 # dsMediation
 RUN Rscript -e "remotes::install_github('datashield/dsBase', ref = '$DSBASE_VERSION', repos = c('https://cloud.r-project.org', 'https://cran.datashield.org'), upgrade = FALSE, lib = '$ROCK_LIB')"
+
+RUN chown -R rock $ROCK_LIB

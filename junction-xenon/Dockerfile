@@ -17,8 +17,6 @@ ENV DSMTL_VERSION 0.9.9
 ENV DSURVIVAL_VERSION v2.1.3
 
 ENV ROCK_LIB /var/lib/rock/R/library
-RUN chown rock $ROCK_LIB
-RUN chmod +t $ROCK_LIB
 
 # Install new R packages
 # dsMediation
@@ -33,3 +31,5 @@ RUN Rscript -e "BiocManager::install(c('bumphunter', 'missMethyl', 'rexposome'),
 # dsOmics
 RUN Rscript -e "BiocManager::install(c('Biobase', 'SNPRelate', 'GENESIS', 'GWASTools', 'GenomicRanges', 'SummarizedExperiment', 'DESeq2', 'edgeR', 'MEAL'), update = FALSE, ask = FALSE, lib = '$ROCK_LIB')" \
  && Rscript -e "remotes::install_github('isglobal-brge/dsOmics', ref = '$DSOMICS_VERSION', upgrade = FALSE, lib = '$ROCK_LIB')"
+
+RUN chown -R rock $ROCK_LIB
