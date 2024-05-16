@@ -4,8 +4,8 @@
 
 docker_compose_file=docker-compose.yml
 no_cache=true
-name=datashield/rock-dolomite-beach
-tag=2.0
+name=datashield/rock-junction-xenon
+tag=latest
 
 # Build Docker image
 build-image:
